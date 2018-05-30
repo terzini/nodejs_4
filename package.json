@@ -1,0 +1,29 @@
+{
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "pre-start": "./node_modules/.bin/babel-node",
+    "start": "./node_modules/.bin/nodemon --exec npm run pre-start -- ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikoleta Terzieva",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "jshint": "^2.9.5",
+    "nodemon": "^1.17.3",
+    "papaparse": "^4.3.7",
+    "through2": "^2.0.3"
+  },
+  "dependencies": {
+    "csv-reader": "^1.0.2",
+    "follow-redirects": "^1.5.0",
+    "meow": "^5.0.0"
+  }
+}
