@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "pre-start": "./node_modules/.bin/babel-node",
-    "start": "./node_modules/.bin/nodemon --exec npm run pre-start -- ./src/app.js",
+    "start": "./node_modules/.bin/nodemon --exec npm run pre-start -- ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nikoleta Terzieva",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "csv-reader": "^1.0.2",
+    "express": "^4.16.3",
     "follow-redirects": "^1.5.0",
     "meow": "^5.0.0"
   }
