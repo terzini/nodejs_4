@@ -11,10 +11,9 @@ const product = {
     ]
  };
  
-
-const server = http.createServer((req, resp) => {
-    resp.writeHead(200, { "Content-Type": "application/json" });
-    resp.write(JSON.stringify(product));
-    resp.end();
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.write(JSON.stringify(product));
+    res.end();
 }).listen(3000);
 
